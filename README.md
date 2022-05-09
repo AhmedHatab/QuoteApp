@@ -1,2 +1,2 @@
 # QuoteApp
-display Quotes
+For display Quotes
