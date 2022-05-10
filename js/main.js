@@ -4,8 +4,9 @@ var Quotes = ['"Be yourself; everyone else is already taken."',
     '"Yesterday is history, tomorrow is a mystery, today is a gift of God, which is why we call it the present."',
     `"I have not failed. I've just found 10,000 ways that won't work."`];
 var author = ["Oscar Wilde", "Mahatma Gandhi", "Albert Einstein","Bill Keane"," Thomas A. Edison"];
-function displayQuote() {
-    var randomQute = Math.floor(Math.random() * 5);
+var displayQuote= document.querySelector('button');
+displayQuote.onclick = function() {
+    var randomQute = Math.floor(Math.random() * Quotes.length);
     document.querySelector("p").innerHTML = Quotes[randomQute];
     document.querySelector("span").innerHTML = author[randomQute];
 }
